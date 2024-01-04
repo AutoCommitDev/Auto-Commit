@@ -48,7 +48,7 @@ async function performCommitAndPush(): Promise<void> {
     await git.push("origin", "main");
     console.log("The remote repository was pushed.");
 
-    await sendMessageDiscord("**Commit was made:** ${commitMessage}.");
+    await sendMessageDiscord(`**Commit was made:** ${commitMessage}.`);
   } catch (error: any) {
     await sendMessageDiscord(
       `An error occurred while pushing.\n\`\`\`${error}\`\`\``
