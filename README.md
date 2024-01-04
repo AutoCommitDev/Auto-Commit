@@ -6,8 +6,6 @@
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
 </p>
 
 <p align="center">
