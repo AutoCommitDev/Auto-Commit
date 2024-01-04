@@ -30,7 +30,7 @@ async function performCommitAndPush(): Promise<void> {
   const commitMessage: string = `📅 Automated commit: Day ${currentDay}.`;
   await git.commit(commitMessage);
 
-  console.log(`Commit was made: ${commitMessage}.`);
+  console.log(`Commit was made: ${commitMessage}`);
 
   async function sendMessageDiscord(message: string) {
     await fetch(process.env.DISCORD_WEBHOOK as string, {
@@ -44,15 +44,16 @@ async function performCommitAndPush(): Promise<void> {
     });
   }
 
-  await git.push("origin", "main").catch(async (error: any) => {
-    return await sendMessageDiscord(
+  try {
+    await git.push("origin", "main");
+    console.log("The remote repository was pushed.");
+
+    await sendMessageDiscord("**Commit was made:** ${commitMessage}.");
+  } catch (error: any) {
+    await sendMessageDiscord(
       `An error occurred while pushing.\n\`\`\`${error}\`\`\``
     );
-  });
-
-  console.log("The remote repository was pushed.");
-
-  await sendMessageDiscord("**Commit was made:** ${commitMessage}.");
+  }
 }
 
 function wait24Hours(): Promise<void> {
