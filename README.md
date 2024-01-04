@@ -1,11 +1,11 @@
 <h1 align="center">Auto Commit</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AutoCommitDev/Auto-Commit?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AutoCommitDev/Auto-Commit?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AutoCommitDev/Auto-Commit-Code?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AutoCommitDev/Auto-Commit?color=56BEB8">
 </p>
 
 <p align="center">
@@ -37,10 +37,10 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/AutoCommitDev/Auto-Commit-Code
+$ git clone https://github.com/AutoCommitDev/Auto-Commit
 
 # Access
-$ cd Auto-Commit-Code
+$ cd Auto-Commit
 
 # Install dependencies
 $ npm i
